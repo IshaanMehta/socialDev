@@ -43,7 +43,7 @@ export const themeSettings = (mode) => {
               light: colorTokens.primary[800]
             },
             neutral: {
-              dark: colorTokens.grey[100],
+              dark: colorTokens.grey[700],
               main: colorTokens.grey[200],
               mediumMain: colorTokens.grey[300],
               medium: colorTokens.grey[400],
@@ -74,11 +74,16 @@ export const themeSettings = (mode) => {
             }
           })
     },
+    fonts: {
+      body: "system-ui, sans-serif",
+      heading: "system-ui, sans-serif",
+      monospace: "Menlo, monospace"
+    },
     typography: {
       fontFamily: ["Rubik", "sans-serif"].join(","),
       fontSize: 12,
       h1: {
-        fontFamily: ["Rubik", "sans-serif"].join(","),
+        fontFamily: "heading",
         fontSize: 40
       },
       h2: {
